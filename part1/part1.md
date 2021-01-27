@@ -5,7 +5,7 @@
 5. Line 11 will try log the value of variable i to the console but will result in an error because i was declared in the for loop and was declared using let which scopes within function, if, or for in this case within the for loop.
 6. Line 12 will try log the value of variable discountedPrice to the console but will result in an error because discountedPrice was declared in the for loop and was declared using let which scopes within function, if, or for in this case within the for loop.
 7. Line 13 will log the value of variable FinalPrice to the console because the variable was declared within the same function but outside the for loop, the let keyword will scope within the function because there is nothing else around this declaration.
-8. The function will return an error because we attempt to log variables to the console that do not exist. Without these logs the result would be the same as when we use var.
+8. The function will return an error because we attempt to log variables to the console that do not exist. Without these logs the result would be the same as when we use var. The function will return [50,100,150]. If you trace through the function what it does is takes the original prices multiplies them by the percentage that you pay after subtracting the discount and then rounds the value and stores it at the end of the discounted array. This question has a discount of .5 so the items are .5 the price.
 9. Line 11 will try log the value of variable i to the console but will result in an error because i was declared in the for loop and was declared using let which scopes within function, if, or for in this case within the for loop.
 10. Line 12 will try log the value of variable discountedPrice to the console but will result in an error because discountedPrice was declared in the for loop and was declared using const, which scopes within function, if, or for, in this case within the for loop. However because we attempt to reassign a value to a const variable we will get an error.
 11. Line 13 will log the value of variable FinalPrice to the console because the variable was declared within the same function but outside the for loop, the const keyword will scope within the function because there is nothing else around this declaration. However because we attempt to reassign a value to a const variable we will get an error.
@@ -32,6 +32,6 @@
 16. === checks for strict equality without type conversion so the values on either side must be the exact same to be equal, the == checks for equality using type conversion so things like 2 and '2' will return false for === and true for ==.
 17. Logged: How are you? This one is logged because true has a value of 1 which is not equal to 2, so the if statement requirement is not met. 2 has a value which means Boolean(2) is true so the else if requirement is met so it enters that statement and logs How are you?
 18. See file part1-question18.js
-19. Result: [6,8,10]. ****** NEEDS EXPLANATION *** IDK WTF THIS IS
-20. *** I DON"T FUCKING KNOW
-21. FUCK THIS
+19. Result: [6,8,10]. The code puts the first element of array and the second function into the doSomething function so it does 1+2 as x in the function so 3 * 2 is the value returned and pushed to newArr. Then it puts 2 into the doSomething and we get 4 * 2  which is 8 and then we get 3 in which is 3+2 which is 5 * 2 which is 10.
+20. See file part1-question20.js
+21. Console: 1 4 3 2. This is because of the delays on 3 and 2.
